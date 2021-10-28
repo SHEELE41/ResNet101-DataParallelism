@@ -10,6 +10,8 @@ import torch.nn.functional as F
 from torch.optim import SGD
 
 from resnet import resnet101
+import torchgpipe
+from torchgpipe import GPipe
 
 Stuffs = Tuple[nn.Module, int, List[torch.device]]  # (model, batch_size, devices)
 Experiment = Callable[[nn.Module, List[int]], Stuffs]
